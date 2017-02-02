@@ -24,3 +24,4 @@ export class Layout {
     }
   }
 }
+export function L(...Arguments: Array<any>) { return new Layout(...Arguments); }

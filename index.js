@@ -24,3 +24,11 @@ var Layout = (function () {
     return Layout;
 }());
 exports.Layout = Layout;
+function L() {
+    var Arguments = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        Arguments[_i] = arguments[_i];
+    }
+    return new (Layout.bind.apply(Layout, [void 0].concat(Arguments)))();
+}
+exports.L = L;
